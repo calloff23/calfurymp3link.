@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube to MP3 Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <h1>YouTube to MP3 Converter</h1>
+      <p>Convert YouTube videos into MP3 files in 3 easy steps!</p>
+
+      <!-- Step 1: Enter YouTube link -->
+      <label for="yt-link">Enter YouTube Link:</label>
+      <input type="text" id="yt-link" placeholder="Paste YouTube URL here" />
+
+      <!-- Step 2: Click Convert Button -->
+      <button id="convert-btn" onclick="convertVideo()">Convert to MP3</button>
+
+      <!-- Step 3: Show Download Link -->
+      <div id="download-link" style="display: none;">
+        <p>Your MP3 file is ready!</p>
+        <a id="mp3-link" href="#" download>Download MP3</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Signature in bottom-left corner -->
+  <div class="signature">
+    <p>Made by Sharewin A. Ruiz, Student from NMS</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
